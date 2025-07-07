@@ -21,7 +21,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  *
- * debug.h - Various debug functions
+ * debug_cf.h - Various debug functions
  */
 #ifndef DEBUG_H_
 #define DEBUG_H_
@@ -35,7 +35,7 @@ void debugInitTrace(void);
 /**
  * Sends trace information using the UART1. This function is
  * used with the freertos traceTASK_SWITCHED_IN() macro.
- * @param taskNbr number currently running
+ * @param Task number currently running
  */
 void debugSendTraceInfo(unsigned int taskNbr);
 

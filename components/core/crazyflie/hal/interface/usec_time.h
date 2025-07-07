@@ -7,7 +7,7 @@
  *
  * Crazyflie control firmware
  *
- * Copyright (C) 2011-2023 Bitcraze AB
+ * Copyright (C) 2011-2013 Bitcraze AB
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,21 +23,19 @@
  *
  * usec_time.h - Microsecond-resolution timer.
  */
-#pragma once
+#ifndef USEC_TIME_H_
+#define USEC_TIME_H_
 
 #include <stdint.h>
 
 /**
  * Initialize microsecond-resolution timer (TIM1).
  */
-void usecTimerInit(void);
-
-/**
- * Reset the microsecond-resolution timer to 0.
- */
-void usecTimerReset(void);
+void initUsecTimer(void);
 
 /**
  * Get microsecond-resolution timestamp.
  */
 uint64_t usecTimestamp(void);
+
+#endif /* USEC_TIME_H_ */

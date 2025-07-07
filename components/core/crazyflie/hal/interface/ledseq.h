@@ -43,7 +43,7 @@
 
 #include <stdint.h>
 #include <stdbool.h>
-#include <led.h>
+#include "led.h"
 
 #define LEDSEQ_CHARGE_CYCLE_TIME_500MA  1000
 #define LEDSEQ_CHARGE_CYCLE_TIME_MAX    500
@@ -138,7 +138,5 @@ extern ledseqContext_t seq_charged;
 extern ledseqContext_t seq_charging;
 extern ledseqContext_t seq_testPassed;
 extern ledseqContext_t seq_testFailed;
-extern ledseqContext_t seq_user_notification_success;
-extern ledseqContext_t seq_user_notification_fail;
 
 #endif
